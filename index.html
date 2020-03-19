@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Kanban desk</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+			<div class="columns">
+				<div class="column droppable" data-column-id="1">
+					<p class="column-header" contenteditable="true">In Progress</p>
+					<div data-notes>
+						<div class="note draggable" data-note-id="1">In progress something 1</div>
+						<div class="note draggable" data-note-id="2">In progress something 2</div>
+						<div class="note draggable" data-note-id="3">In progress something 3</div>
+					</div>
+				</div>
+
+				<div class="column droppable" data-column-id="2">
+					<p class="column-header" contenteditable="true">Testing</p>
+					<div data-notes>
+						<div class="note draggable" data-note-id="4">Testing something 1</div>
+						<div class="note draggable" data-note-id="5">Testing something 2</div>
+						<div class="note draggable" data-note-id="6">Testing something 3</div>
+					</div>
+				</div>
+
+				<div class="column droppable" data-column-id="3">
+					<p class="column-header" contenteditable="true">Done</p>
+					<div data-notes>
+						<div class="note draggable" data-note-id="4">Done something 1</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+
+    <script src="column.js"></script>
+	<script src="note.js"></script>
+	<script src="row.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
